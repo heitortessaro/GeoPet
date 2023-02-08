@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\GeoPet",
+    "\\GeoPet\\obj\\Container"
   ],
-  "SelectedNode": "\\C:\\Users\\spinh\\Documents\\Trybe\\AccC#\\projetoFinal\\GeoPet",
+  "SelectedNode": "\\GeoPet\\GeoPet.csproj.user",
   "PreviewInSolutionExplorer": false
 }

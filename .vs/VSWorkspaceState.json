@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\GeoPet",
-    "\\GeoPet\\obj\\Container"
+    "\\GeoPet.Test"
   ],
-  "SelectedNode": "\\GeoPet\\GeoPet.csproj.user",
-  "PreviewInSolutionExplorer": false
+  "SelectedNode": "\\GeoPet.Test\\GeoPet.Test.csproj",
+  "PreviewInSolutionExplorer": true
 }

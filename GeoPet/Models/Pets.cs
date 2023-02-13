@@ -8,7 +8,9 @@ public class Pets
 
     public string Species { get; set; }
 
-    public 
+    public string Latitute { get; set; }
+
+    public string Longitude { get; set; }
 
     [ForeignKey("CareGiverId")]
     public int CareGiverId { get; set; }

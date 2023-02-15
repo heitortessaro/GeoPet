@@ -28,7 +28,7 @@ namespace GeoPet.Repository
         }
 
         public void AddTutor(CareGivers tutor)
-        {
+        {   
             _context.CareGivers.Add(tutor);
             _context.SaveChanges();
         }

@@ -1,4 +1,4 @@
-﻿namespace GeoPet.Services
+﻿namespace GeoPet.Interfaces
 {
     public interface IAddress
     {
@@ -12,6 +12,6 @@
         public string gia { get; set; }
         public string ddd { get; set; }
         public string siafi { get; set; }
-        
+
     }
 }

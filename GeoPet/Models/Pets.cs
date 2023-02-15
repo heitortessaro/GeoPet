@@ -5,6 +5,7 @@ namespace GeoPet.Models
 
     public class Pets
     {
+        [Key]
         public int PetId { get; set; }
         public string Name { get; set; }
 

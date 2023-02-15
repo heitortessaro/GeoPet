@@ -1,4 +1,6 @@
 ﻿using System.Net.Http.Json;
+using GeoPet.Interfaces;
+
 namespace GeoPet.Services
 
 
@@ -22,8 +24,8 @@ namespace GeoPet.Services
                     return null;
                 }
 
-            var address = await response.Content.ReadFromJsonAsync<object>();
-            return address!;
+            var address = await response.Content.ReadFromJsonAsync<IAddress>();
+            return address;
         }
     }
 }

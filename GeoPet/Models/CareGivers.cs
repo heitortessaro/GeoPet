@@ -1,19 +1,23 @@
-﻿namespace GeoPet.Models;
-
+﻿
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-public class CareGivers
+using GeoPet.Interfaces;
+namespace GeoPet.Models
 {
-    [Key]
 
-    public int CareGiverId { get; set; }
-    public string Name { get; set; }
+    public class CareGivers
+    {
+        [Key]
 
-    public string Email { get; set; }
+        public int CareGiverId { get; set; }
+        public string Name { get; set; }
+         
+        public string Email { get; set; }
 
-    public string Phone { get; set; }
+        public string Phone { get; set; }
 
-    public string Address { get; set; }
+        public IAddress Address { get; set; }
 
+    }
 }

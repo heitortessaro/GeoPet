@@ -1,0 +1,7 @@
+C:\Users\jorge\source\repos\heitortessaro\GeoPet\GeoPet\obj\Debug\net6.0\GeoPet.csproj.AssemblyReference.cache
+C:\Users\jorge\source\repos\heitortessaro\GeoPet\GeoPet\obj\Debug\net6.0\GeoPet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jorge\source\repos\heitortessaro\GeoPet\GeoPet\obj\Debug\net6.0\GeoPet.AssemblyInfoInputs.cache
+C:\Users\jorge\source\repos\heitortessaro\GeoPet\GeoPet\obj\Debug\net6.0\GeoPet.AssemblyInfo.cs
+C:\Users\jorge\source\repos\heitortessaro\GeoPet\GeoPet\obj\Debug\net6.0\GeoPet.csproj.CoreCompileInputs.cache
+C:\Users\jorge\source\repos\heitortessaro\GeoPet\GeoPet\obj\Debug\net6.0\GeoPet.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jorge\source\repos\heitortessaro\GeoPet\GeoPet\obj\Debug\net6.0\GeoPet.MvcApplicationPartsAssemblyInfo.cache

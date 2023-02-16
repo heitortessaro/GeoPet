@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Compilador do Microsoft (R) Visual C#",
+        "version": "4.4.0.0",
+        "fileVersion": "4.4.0-6.23101.15 (72dbad1d)",
+        "semanticVersion": "4.4.0",
+        "language": "pt-BR"
+      },
+      "results": [
+        {
+          "ruleId": "CS1524",
+          "level": "error",
+          "message": "Catch ou finally esperado",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jorge/source/repos/heitortessaro/GeoPet/GeoPet/Controllers/PetsController.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 13,
+                  "endLine": 32,
+                  "endColumn": 14
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CS1012",
+          "level": "error",
+          "message": "Número excessivo de caracteres no literal de caractere",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jorge/source/repos/heitortessaro/GeoPet/GeoPet/GeoPet.Test/CepTest/ViaCepTest.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 10,
+                  "endLine": 41,
+                  "endColumn": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CS1002",
+          "level": "error",
+          "message": "; esperado",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jorge/source/repos/heitortessaro/GeoPet/GeoPet/GeoPet.Test/CepTest/ViaCepTest.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 31,
+                  "endLine": 41,
+                  "endColumn": 31
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "rules": {
+        "CS1002": {
+          "id": "CS1002",
+          "defaultLevel": "error",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS1002)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry",
+              "NotConfigurable"
+            ]
+          }
+        },
+        "CS1012": {
+          "id": "CS1012",
+          "defaultLevel": "error",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS1012)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry",
+              "NotConfigurable"
+            ]
+          }
+        },
+        "CS1524": {
+          "id": "CS1524",
+          "defaultLevel": "error",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS1524)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry",
+              "NotConfigurable"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -12,24 +12,6 @@
       },
       "results": [
         {
-          "ruleId": "CS1524",
-          "level": "error",
-          "message": "Catch ou finally esperado",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jorge/source/repos/heitortessaro/GeoPet/GeoPet/Controllers/PetsController.cs",
-                "region": {
-                  "startLine": 32,
-                  "startColumn": 13,
-                  "endLine": 32,
-                  "endColumn": 14
-                }
-              }
-            }
-          ]
-        },
-        {
           "ruleId": "CS1012",
           "level": "error",
           "message": "Número excessivo de caracteres no literal de caractere",
@@ -85,20 +67,6 @@
           "id": "CS1012",
           "defaultLevel": "error",
           "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS1012)",
-          "properties": {
-            "category": "Compiler",
-            "isEnabledByDefault": true,
-            "tags": [
-              "Compiler",
-              "Telemetry",
-              "NotConfigurable"
-            ]
-          }
-        },
-        "CS1524": {
-          "id": "CS1524",
-          "defaultLevel": "error",
-          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS1524)",
           "properties": {
             "category": "Compiler",
             "isEnabledByDefault": true,

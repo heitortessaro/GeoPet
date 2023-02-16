@@ -28,7 +28,7 @@ namespace GeoPet.Repository
         }
 
         public void AddTutor(CareGivers tutor)
-        {   
+        {
             _context.CareGivers.Add(tutor);
             _context.SaveChanges();
         }
@@ -37,6 +37,16 @@ namespace GeoPet.Repository
         {
             _context.CareGivers.Update(tutor);
             _context.SaveChanges();
+        }
+
+        public void DeleteTutor(int id)
+        {
+            var tutor = _context.CareGivers.FirstOrDefault(t => t.CareGiverId == id);
+            if (tutor == null)
+            {
+                throw new Exception("Tutor not found");
+            }
+            _context.CareGivers.Remove(tutor);
         }
     }
 }

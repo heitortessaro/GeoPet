@@ -17,7 +17,7 @@ namespace GeoPet.Models
 
         public string Phone { get; set; }
 
-        public IAddress Address { get; set; }
+        public string Cep { get; set; }
 
     }
 }

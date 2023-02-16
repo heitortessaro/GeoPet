@@ -33,7 +33,8 @@ namespace GeoPet.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
+        [HttpGet]
+        [Route("all")]
         public async Task<ActionResult<IEnumerable<CareGivers>>> GetAllTutors()
         {
             try
@@ -46,14 +47,10 @@ namespace GeoPet.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
+        [HttpPost]
+        [Route("add")]
         public async Task<ActionResult<CareGivers>> AddTutor(CareGivers tutor)
         {
-            var ValidCep = await _viaCepAPI.GetLocation(tutor.Address.cep);
-            if (ValidCep == null)
-            {
-                return BadRequest("Invalid CEP");
-            }
             try
             {
                 _tutorRepository.AddTutor(tutor);
@@ -64,18 +61,28 @@ namespace GeoPet.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
+        [HttpPost]
+        [Route("update")]
         public async Task<ActionResult<CareGivers>> UpdateTutor(CareGivers tutor)
         {
-            var ValidCep = await _viaCepAPI.GetLocation(tutor.Address.cep);
-            if (ValidCep == null)
-            {
-                return BadRequest("Invalid CEP");
-            }
             try
             {
                 _tutorRepository.UpdateTutor(tutor);
                 return Ok(tutor);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpDelete]
+        [Route("delete/{id:int}")]
+        public async Task<ActionResult<CareGivers>> DeleteTutor(int id)
+        {
+            try
+            {
+                _tutorRepository.DeleteTutor(id);
+                return Ok();
             }
             catch (Exception ex)
             {

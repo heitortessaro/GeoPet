@@ -19,6 +19,7 @@ namespace GeoPet.Controllers
         }
 
         [HttpPost]
+        [Route("add")]
         public async Task<ActionResult<Pets>> AddPet(Pets pet)
         {
             if (pet == null)
@@ -38,6 +39,7 @@ namespace GeoPet.Controllers
         }
 
         [HttpGet]
+        [Route("all")]
         public async Task<ActionResult<IEnumerable<Pets>>> GetAllPets()
         {
             try
@@ -67,6 +69,7 @@ namespace GeoPet.Controllers
         }
 
         [HttpPut]
+        [Route("update")]
         public async Task<ActionResult<Pets>> UpdatePet(Pets pet)
         {
             if (pet == null)

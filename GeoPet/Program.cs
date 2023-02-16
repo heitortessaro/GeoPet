@@ -1,8 +1,15 @@
+using GeoPet.Repository;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IGeoPetContext, GeoPetContext>();
+builder.Services.AddScoped<IPetRepository, PetRepository>();
+builder.Services.AddScoped<ITutorRepository, TutorRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -22,3 +29,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+public partial class Program { }

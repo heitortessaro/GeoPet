@@ -12,5 +12,7 @@ namespace GeoPet.Repository
         void AddTutor(CareGivers tutor);
 
         void UpdateTutor(CareGivers tutor);
+
+        void DeleteTutor(int id);
     }
 }

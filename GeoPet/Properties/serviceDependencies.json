@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:server=127.0.0.1;database=geopet;user=SA;Password=Password12!;trusted_connection=true;",
+      "dynamicId": null
+    }
+  }
+}

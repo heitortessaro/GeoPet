@@ -18,13 +18,14 @@ namespace GeoPet.Repository
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(
-            @"server=127.0.0.1;
-        database=geo_pet;
-        user=laika;
-        password=1234;
-        trusted_connection=true;"
-            );
+            var connectionString = "Server=127.0.0.1;Database=Geopet;User=SA;Password=Password123";
+            optionsBuilder.UseSqlServer(connectionString);
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Pets>().ToTable("Pets");
+            modelBuilder.Entity<LocationHistory>().ToTable("LocationHistory");
+            modelBuilder.Entity<CareGivers>().ToTable("CareGivers");
         }
     }
 }

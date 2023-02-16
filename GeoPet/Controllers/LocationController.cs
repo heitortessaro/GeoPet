@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using GeoPet.Services;
 
 namespace GeoPet.Controllers
 {
@@ -16,7 +17,8 @@ namespace GeoPet.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> GetLocation(string latitude, string longitude)
+        [Route("{latitude}/{longitude}")]
+        public async Task<ActionResult> GetLocation(double latitude, double longitude)
         {
             var response = await _client.GetAsync($"lat={latitude}&lon={longitude}&format=json");
 

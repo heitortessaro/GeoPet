@@ -8,6 +8,7 @@
 	<ErrorLog>compiler-diagnostics.sarif</ErrorLog>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
+    <UserSecretsId>f822485c-bb13-4e61-ab82-bf7258fa3995</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

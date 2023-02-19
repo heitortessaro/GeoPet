@@ -3,31 +3,31 @@ using GeoPet.Services;
 
 namespace GeoPet.Controllers
 {
-    [Route("location")]
     [ApiController]
+    [Route("location")]
     public class LocationController : ControllerBase
     {
-        private readonly HttpClient _client;
-        private const string _baseUrl = "https://nominatim.openstreetmap.org/reverse?";
-        
-        public LocationController(HttpClient client)
+        public IViaCepAPI _viaCepAPI;
+
+        public LocationController(IViaCepAPI viaCepAPI)
         {
-            _client = client;
-            _client.BaseAddress = new Uri(_baseUrl);
+            _viaCepAPI = viaCepAPI;
         }
 
         [HttpGet]
-        [Route("{latitude}/{longitude}")]
-        public async Task<ActionResult> GetLocation(double latitude, double longitude)
+        [Route("{cep}")]
+        public async Task<IActionResult> GetLocation(string cep)
         {
-            var response = await _client.GetAsync($"lat={latitude}&lon={longitude}&format=json");
-
-            if (response.IsSuccessStatusCode)
+            try
             {
-                return Ok(response.Content.ReadFromJsonAsync<object>());
+                var location = await _viaCepAPI.GetLocation(cep);
+                return Ok(location);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
 
-            return BadRequest();
         }
     }
 }

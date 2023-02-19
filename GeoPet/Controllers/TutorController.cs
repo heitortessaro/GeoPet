@@ -76,7 +76,7 @@ namespace GeoPet.Controllers
             }
         }
         [HttpDelete]
-        [Route("delete/{id:int}")]
+        [Route("delete/{id}")]
         public async Task<ActionResult<CareGivers>> DeleteTutor(int id)
         {
             try

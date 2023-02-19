@@ -23,6 +23,7 @@ namespace GeoPet.Repository
                 throw new Exception("Pet not found");
             }
             _context.Pets.Remove(pet);
+            _context.SaveChanges();
         }
 
         public IEnumerable<Pets> GetAllPets()

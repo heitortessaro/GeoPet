@@ -47,6 +47,7 @@ namespace GeoPet.Repository
                 throw new Exception("Tutor not found");
             }
             _context.CareGivers.Remove(tutor);
+            _context.SaveChanges();
         }
     }
 }

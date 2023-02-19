@@ -1,31 +1,26 @@
-﻿using System.Net.Http.Json;
-using GeoPet.Interfaces;
-
-namespace GeoPet.Services
-
-
+﻿namespace GeoPet.Services
 {
-    public class ViaCepAPI
+    public class ViaCepAPI : IViaCepAPI
     {
-        private readonly string _baseURL = "https://viacep.com.br/ws/";
         private readonly HttpClient _client;
+        private const string _baseURL = "https://viacep.com.br/ws/";
 
         public ViaCepAPI(HttpClient client)
         {
             _client = client;
-            _client.BaseAddress = new Uri(_baseURL);
+            client.BaseAddress = new Uri(_baseURL);
         }
         
-        public async Task<IAddress> GetLocation(string cep)
+        public async Task<object> GetLocation(string cep)
         {
             var response = await _client.GetAsync($"{cep}/json/");
             if (!response.IsSuccessStatusCode)
                 {
-                    return null;
+                    return default(object)!;
                 }
 
-            var address = await response.Content.ReadFromJsonAsync<IAddress>();
-            return address;
+            var address = await response.Content.ReadFromJsonAsync<object>();
+            return address!;
         }
     }
 }

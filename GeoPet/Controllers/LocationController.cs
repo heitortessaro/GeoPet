@@ -7,11 +7,11 @@ namespace GeoPet.Controllers
     [Route("location")]
     public class LocationController : ControllerBase
     {
-        public IViaCepAPI _viaCepAPI;
+        public ILocationService _locationService;
 
-        public LocationController(IViaCepAPI viaCepAPI)
+        public LocationController(ILocationService locationService)
         {
-            _viaCepAPI = viaCepAPI;
+            _locationService = locationService;
         }
 
         [HttpGet]
@@ -20,7 +20,23 @@ namespace GeoPet.Controllers
         {
             try
             {
-                var location = await _viaCepAPI.GetLocation(cep);
+                var location = await _locationService.GetLocationByCep(cep);
+                return Ok(location);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+        }
+
+        [HttpGet]
+        [Route("{latitude}/{longitude}")]
+        public async Task<IActionResult> GetLocation(string latitude, string longitude)
+        {
+            try
+            {
+                var location = await _locationService.GetLocationByLatitudeLongitude(latitude, longitude);
                 return Ok(location);
             }
             catch (Exception ex)

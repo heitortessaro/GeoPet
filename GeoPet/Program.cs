@@ -12,7 +12,7 @@ builder.Services.AddDbContext<GeoPetContext>();
 builder.Services.AddScoped<IGeoPetContext, GeoPetContext>();
 builder.Services.AddScoped<IPetRepository, PetRepository>();
 builder.Services.AddScoped<ITutorRepository, TutorRepository>();
-builder.Services.AddHttpClient<IViaCepAPI, ViaCepAPI>();
+builder.Services.AddHttpClient<ILocationService, LocationService>();
 
 var app = builder.Build();
 

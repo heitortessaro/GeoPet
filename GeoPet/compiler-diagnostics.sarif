@@ -18,117 +18,33 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/spinh/Documents/Trybe/AccC%23/projetoFinal/GeoPet/GeoPet/Controllers/TutorController.cs",
-                "region": {
-                  "startLine": 24,
-                  "startColumn": 53,
-                  "endLine": 24,
-                  "endColumn": 65
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "Este método assíncrono não possui operadores 'await' e será executado de modo síncrono. É recomendável o uso do operador 'await' para aguardar chamadas à API desbloqueadas ou do operador 'await Task.Run(...)' para realizar um trabalho associado à CPU em um thread em segundo plano.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/spinh/Documents/Trybe/AccC%23/projetoFinal/GeoPet/GeoPet/Controllers/TutorController.cs",
-                "region": {
-                  "startLine": 38,
-                  "startColumn": 66,
-                  "endLine": 38,
-                  "endColumn": 78
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "Este método assíncrono não possui operadores 'await' e será executado de modo síncrono. É recomendável o uso do operador 'await' para aguardar chamadas à API desbloqueadas ou do operador 'await Task.Run(...)' para realizar um trabalho associado à CPU em um thread em segundo plano.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/spinh/Documents/Trybe/AccC%23/projetoFinal/GeoPet/GeoPet/Controllers/TutorController.cs",
-                "region": {
-                  "startLine": 52,
-                  "startColumn": 53,
-                  "endLine": 52,
-                  "endColumn": 61
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "Este método assíncrono não possui operadores 'await' e será executado de modo síncrono. É recomendável o uso do operador 'await' para aguardar chamadas à API desbloqueadas ou do operador 'await Task.Run(...)' para realizar um trabalho associado à CPU em um thread em segundo plano.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/spinh/Documents/Trybe/AccC%23/projetoFinal/GeoPet/GeoPet/Controllers/TutorController.cs",
-                "region": {
-                  "startLine": 66,
-                  "startColumn": 53,
-                  "endLine": 66,
-                  "endColumn": 64
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "Este método assíncrono não possui operadores 'await' e será executado de modo síncrono. É recomendável o uso do operador 'await' para aguardar chamadas à API desbloqueadas ou do operador 'await Task.Run(...)' para realizar um trabalho associado à CPU em um thread em segundo plano.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/spinh/Documents/Trybe/AccC%23/projetoFinal/GeoPet/GeoPet/Controllers/TutorController.cs",
-                "region": {
-                  "startLine": 80,
-                  "startColumn": 53,
-                  "endLine": 80,
-                  "endColumn": 64
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "Este método assíncrono não possui operadores 'await' e será executado de modo síncrono. É recomendável o uso do operador 'await' para aguardar chamadas à API desbloqueadas ou do operador 'await Task.Run(...)' para realizar um trabalho associado à CPU em um thread em segundo plano.",
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "file:///C:/Users/spinh/Documents/Trybe/AccC%23/projetoFinal/GeoPet/GeoPet/Controllers/PetsController.cs",
                 "region": {
                   "startLine": 23,
                   "startColumn": 47,
                   "endLine": 23,
                   "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Este método assíncrono não possui operadores 'await' e será executado de modo síncrono. É recomendável o uso do operador 'await' para aguardar chamadas à API desbloqueadas ou do operador 'await Task.Run(...)' para realizar um trabalho associado à CPU em um thread em segundo plano.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/spinh/Documents/Trybe/AccC%23/projetoFinal/GeoPet/GeoPet/Controllers/TutorController.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 53,
+                  "endLine": 24,
+                  "endColumn": 65
                 }
               }
             }
@@ -165,12 +81,54 @@
           "locations": [
             {
               "resultFile": {
+                "uri": "file:///C:/Users/spinh/Documents/Trybe/AccC%23/projetoFinal/GeoPet/GeoPet/Controllers/TutorController.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 66,
+                  "endLine": 38,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Este método assíncrono não possui operadores 'await' e será executado de modo síncrono. É recomendável o uso do operador 'await' para aguardar chamadas à API desbloqueadas ou do operador 'await Task.Run(...)' para realizar um trabalho associado à CPU em um thread em segundo plano.",
+          "locations": [
+            {
+              "resultFile": {
                 "uri": "file:///C:/Users/spinh/Documents/Trybe/AccC%23/projetoFinal/GeoPet/GeoPet/Controllers/PetsController.cs",
                 "region": {
                   "startLine": 58,
                   "startColumn": 47,
                   "endLine": 58,
                   "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Este método assíncrono não possui operadores 'await' e será executado de modo síncrono. É recomendável o uso do operador 'await' para aguardar chamadas à API desbloqueadas ou do operador 'await Task.Run(...)' para realizar um trabalho associado à CPU em um thread em segundo plano.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/spinh/Documents/Trybe/AccC%23/projetoFinal/GeoPet/GeoPet/Controllers/TutorController.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 53,
+                  "endLine": 52,
+                  "endColumn": 61
                 }
               }
             }
@@ -207,12 +165,54 @@
           "locations": [
             {
               "resultFile": {
+                "uri": "file:///C:/Users/spinh/Documents/Trybe/AccC%23/projetoFinal/GeoPet/GeoPet/Controllers/TutorController.cs",
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 53,
+                  "endLine": 66,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Este método assíncrono não possui operadores 'await' e será executado de modo síncrono. É recomendável o uso do operador 'await' para aguardar chamadas à API desbloqueadas ou do operador 'await Task.Run(...)' para realizar um trabalho associado à CPU em um thread em segundo plano.",
+          "locations": [
+            {
+              "resultFile": {
                 "uri": "file:///C:/Users/spinh/Documents/Trybe/AccC%23/projetoFinal/GeoPet/GeoPet/Controllers/PetsController.cs",
                 "region": {
                   "startLine": 92,
                   "startColumn": 41,
                   "endLine": 92,
                   "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Este método assíncrono não possui operadores 'await' e será executado de modo síncrono. É recomendável o uso do operador 'await' para aguardar chamadas à API desbloqueadas ou do operador 'await Task.Run(...)' para realizar um trabalho associado à CPU em um thread em segundo plano.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/spinh/Documents/Trybe/AccC%23/projetoFinal/GeoPet/GeoPet/Controllers/TutorController.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 53,
+                  "endLine": 80,
+                  "endColumn": 64
                 }
               }
             }
@@ -231,9 +231,9 @@
                 "uri": "file:///C:/Users/spinh/Documents/Trybe/AccC%23/projetoFinal/GeoPet/GeoPet/Controllers/TutorController.cs",
                 "region": {
                   "startLine": 16,
-                  "startColumn": 36,
+                  "startColumn": 42,
                   "endLine": 16,
-                  "endColumn": 46
+                  "endColumn": 52
                 }
               }
             }

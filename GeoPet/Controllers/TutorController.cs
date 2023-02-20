@@ -13,7 +13,7 @@ namespace GeoPet.Controllers
     public class TutorController : ControllerBase
     {
         private readonly ITutorRepository _tutorRepository;
-        private readonly ViaCepAPI _viaCepAPI;
+        private readonly LocationService _viaCepAPI;
         public TutorController(ITutorRepository tutorRepository)
         {
             _tutorRepository = tutorRepository;
